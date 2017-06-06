@@ -1,0 +1,45 @@
+<!--  <div class="row container">
+	<div class="col-md-4"><a href="#/">Home page</a></div>
+	<div class="col-md-4"><a href="#/news">News</a></div>
+	<div class="col-md-4"><a href="#/aperitivi">Aperitivi</a></div>
+</div>
+ -->
+<div class="content">
+	<div class="left_menu">
+		<div class="logo">
+			<div class="menu_top"><img src="assets/images/button_menu.png"></div>
+			<span class="text_center"><a href="#/" ><img src="assets/images/logo_4FE.png"></a></span>
+		</div>
+		<div class="header-search">
+			<input type="text" id="search_input" class="form-control" ng-model="search_products" placeholder="Search">
+		</div>
+		<div class="top_left_container">
+			<div class="option_select">
+				<a href="#/" class="each_select third_select"><img src="assets/images/button_lefttab_01.png"></a>
+				<a href="#/" class="each_select third_select"><img src="assets/images/button_lefttab_02.png"></a>
+				<a href="#/" class="each_select third_select"><img src="assets/images/button_lefttab_03.png"></a>
+			</div>
+			<div class="add_products">
+			</div>
+		</div>
+		<ul class="menu_list">
+			<li ng-repeat="aperitiv in aperitive" >
+				<img class="each_img_item" src="assets/images/icon_lefttab_01.png"/> 
+				<span ng-click="aperitiv.subcateg = !aperitiv.subcateg">{{aperitiv.title}}</span> <!--ng-click="aperitiv.subcateg = !aperitiv.subcateg"-->
+				<ul class="menu_list_subcategories" > <!--ng-show="!aperitiv.subcateg"-->
+					<li ng-show="!aperitiv.subcateg" ng-repeat = "aperitiveType in aperitiv.subcateg">
+						<span>{{aperitiveType.name}}</span>
+						<ul class="menu_list_sub-subcategories">
+							<li ng-repeat = "ingredient in aperitiveType.ingredients">
+								<span>{{ingredient.name}}</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="item_details">
+		<img src="assets/images/labware_img.png">
+	</div>
+</div>	

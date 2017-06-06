@@ -1,0 +1,225 @@
+.logo {
+  background-color: #1b2133;
+  border-bottom: 4px solid #ff0000;
+  height: 75px;
+  padding: 10px;
+}
+.left_menu {
+  float: left;
+  padding-right: 0;
+  width: 325px;
+}
+.option_select {
+  background-color: #1b2133;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.text_center{
+	text-align: center;
+}
+#search_input{
+	text-align: center !important;
+}
+.add_products {
+  background-color: #2f3a59;
+  float: left;
+  padding: 16px 0 17px;
+  text-align: center;
+  width: 100%;
+}
+.add_products {
+  background-image: url("../images/button_lefttab_plus_off.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 258px auto;
+  box-sizing: border-box;
+  margin-left: 0;
+  padding-bottom: 37px;
+  padding-top: 37px;
+  width: 100%;
+}
+.add_products:hover
+{
+  background-image: url("../images/button_lefttab_plus_on.png");
+  cursor: pointer;
+ }
+.menu_list {
+  background-color: #5568a0;
+  border-bottom: 1px solid black; 
+   border-top: 1px solid black;
+  color: white;
+  float: left;
+  width: 100%;
+}
+.menu_list li {
+  border-bottom: 1px solid #39466c;
+  color: white;
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+}
+
+.menu_list_subcategories li a {
+  text-transform: capitalize;
+  font-family: 'Yanone Kaffeesatz';
+	font-weight: bold;
+	font-size: 19px;
+	color: #FFFFFF;
+	letter-spacing: 0.1em;
+}
+.menu_list_subcategories > li {
+  height: 40px;
+  padding-left: 29px;
+  text-align: left;
+}
+.each_img_item {
+  float: left;
+  padding-block-end: 10px;
+  padding-left: 28px;
+  padding-top: 10px;
+}
+
+ul
+{
+	list-style:none;
+	margin:0;
+	padding: 0;
+}
+.menu_list li > a {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  float: right;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 23px;
+  font-weight: bold;
+  height: 100%;
+  letter-spacing: 0.1em;
+  padding-right: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+i{
+    font-size: 18px;
+}
+.margin_left_10{
+	margin-left: 10px;
+}
+.item_details{
+	background-color: #EEF2F8;
+	margin: 0;
+}
+.menu_top {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  float: left;
+  height: 100%;
+  padding-left: 15px;
+}
+.text_center {
+  display: table;
+  margin: 0 auto;
+}
+#search_input {
+  border: medium none;
+  border-radius: 0;
+  color: #b2b2b2;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+.each_select {
+  float: left;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 33.3%;
+}
+.each_select:hover
+{
+	background-color: #2f3a59;
+}
+.top_left_container {
+  background-color: #2f3a59;
+  float: left;
+  width: 100%;
+}
+.each_select.third_select > img {
+  height: 30px;
+}
+.menu_list_sub-subcategories {
+  float: left;
+  width: 100%;
+}
+.menu_list_sub-subcategories > li {
+  background: #7e9bee none repeat scroll 0 0;
+    border-right: 0 none !important;
+
+}
+.menu_list_subcategories > li {
+  background: #5568a0 url("../images/submenu_arrow_right.png") no-repeat scroll right 13px center;
+  border-right: 0 none !important;
+}
+.menu_list > li {
+  background: #445481 none repeat scroll 0 0;
+  height: 58px;
+}
+.menu_list_subcategories li a {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  float: left;
+  font-family: "Yanone Kaffeesatz";
+  font-size: 19px;
+  font-weight: bold;
+  height: 100%;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+.menu_list_sub-subcategories li a{
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: bold;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  align-items: center;
+  display: flex;
+}
+.menu_list_sub-subcategories li a {
+  float: left;
+  padding-left: 52px;
+}
+.menu_list_sub-subcategories li:hover {
+  background-color: #f2f7fd;
+}
+.menu_list_sub-subcategories li > a:hover {
+  color:#2F3A59;
+}
+.menu_list_sub-subcategories li:hover > a{
+  color:#2F3A59;
+}
+.menu_list_sub-subcategories > li {
+  height: 37px;
+}
+.menu_list li
+{
+  border-right:5px solid #00ffb6;
+}
+.item_details {
+  background-color: #eef2f8;
+  float: left;
+  height: 100%;
+  margin: 0;
+  width: 699px;
+}
+.item_details > img {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.item_details.product_part {
+  background-color: #c3c8d1;
+}

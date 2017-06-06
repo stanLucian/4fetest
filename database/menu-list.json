@@ -1,0 +1,105 @@
+{
+	"menus": [{
+			"id": "978-0641723445",
+			"cat": ["book", "hardcover"],
+			"name": "Aperitivi",
+			"author": "Rick Riordan",
+			"series_t": "Percy Jackson and the Olympians",
+			"sequence_i": 1,
+			"genre_s": "fantasy",
+			"inStock": true,
+			"price": 12.50,
+			"pages_i": 384,
+			"subcategories": [{
+				"name" : "antreu cu ciuperci",
+				"products": [
+					{
+						"name": "salam"
+					},
+					{
+						"name": "maslina"
+					},
+					{
+						"name": "rosii"
+					}
+				]
+			}]
+		},
+		{
+			"id": "978-1423103349",
+			"cat": ["book", "paperback"],
+			"name": "Pizza",
+			"author": "Rick Riordan",
+			"series_t": "Percy Jackson and the Olympians",
+			"sequence_i": 2,
+			"genre_s": "fantasy",
+			"inStock": true,
+			"price": 6.49,
+			"pages_i": 304,
+			"subcategories": [{
+				"name" : "antreu cu ciuperci",
+				"products": [
+					{
+						"name": "salam"
+					},
+					{
+						"name": "mircea"
+					},
+					{
+						"name": "rosii"
+					}
+				]
+			}]
+		},
+		{
+			"id": "978-1857995879",
+			"cat": ["book", "paperback"],
+			"name": "desert",
+			"author": "Jostein Gaarder",
+			"sequence_i": 1,
+			"genre_s": "fantasy",
+			"inStock": true,
+			"price": 3.07,
+			"pages_i": 64,
+			"subcategories": [{
+				"name" : "antreu cu ciuperci",
+				"products": [
+					{
+					"name": "salam"
+					},
+					{
+						"name": "lucian"
+					},
+					{
+						"name": "rosii"
+					}
+				]
+			}]
+		},
+		{
+			"id": "978-1933988177",
+			"cat": ["book", "paperback"],
+			"name": "Mandria dopmnului",
+			"author": "Michael McCandless",
+			"sequence_i": 1,
+			"genre_s": "IT",
+			"inStock": true,
+			"price": 30.50,
+			"pages_i": 475,
+			"subcategories": [{
+				"name" : "antreu cu ciuperci",
+				"products": [
+					{
+					"name": "salam"
+					},
+					{
+						"name": "alexandra"
+					},
+					{
+						"name": "rosii"
+					}
+				]
+			}]
+		}
+	]
+}

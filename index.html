@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Restaurant layout</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+		<script type="text/javascript" src="libraries/angular.min.js"></script>
+		<script type="text/javascript" src="libraries/angular-route.min.js"></script>
+
+	</head>
+	<body ng-app="myApp" ng-controller="mainCtrl">
+
+
+		<div ng-view></div>
+		
+		<!-- Modules -->
+		<script type="text/javascript" src="app.js"></script>
+
+		<!-- Controllers -->
+		<script type="text/javascript" src="controllers/newsCtrl.js"></script> 
+		<script type="text/javascript" src="controllers/mainCtrl.js"></script>
+		<script type="text/javascript" src="controllers/aperitiviCtrl.js"></script>
+		<!-- Services -->
+		<script type="text/javascript" src="services/config.js"></script>
+		<script type="text/javascript" src="services/sync.js"></script>
+		<script type="text/javascript" src="services/menuService.js"></script>
+		<script type="text/javascript" src="services/aperitivesServices.js"></script>
+		<script type="text/javascript" src="services/productServices.js"></script>
+		
+	</body>
+</html>
