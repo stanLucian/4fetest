@@ -15,15 +15,37 @@
 								id: 1,
 								ingredients: [
 										{
-											id: 1,
+											id: 7,
 											name: 'patrunjel'
+											details: [
+												{
+													id: 25,
+													name: 'ceva',
+													description: 'dssdaasddasasddasasddas'
+												},
+												{
+													id: 26,
+													name: 'ingred',
+													description: 'dssdaasddasasddasasddaszzzzz'
+												},
+												{
+													id: 27,
+													name: 'ingredingredingredingred',
+													description: 'dssdaasddasaazzzzzsddasasddas'
+												},
+
+											]
 										},
 										{
-											id: 2,
-											name: 'marar'
+											id: 8,
+											name: 'marar',
+											details: [
+											]
 										},{
-											id: 3,
-											name: 'muschi'
+											id: 9,
+											name: 'muschi',
+											details: [
+											]
 										}
 
 								]
@@ -33,14 +55,32 @@
 								id: 2,
 								ingredients: [
 										{
-											id: 1,
-											name: 'ridiche'
+											id: 10,
+											name: 'ridiche',
+											details: [
+												{
+													id: 27,
+													name: '11111',
+													description: 'dssdaasddasasddasasddas'
+												},
+												{
+													id: 28,
+													name: '222',
+													description: 'dssdaasddasasddasasddaszzzzz'
+												},
+												{
+													id: 29,
+													name: '33333',
+													description: 'dssdaasddasaazzzzzsddasasddas'
+												},
+
+											]
 										},
 										{
-											id: 2,
+											id: 11,
 											name: 'rosie'
 										},{
-											id: 3,
+											id: 12,
 											name: 'salam'
 										}
 
@@ -51,14 +91,14 @@
 								id: 3,
 								ingredients: [
 										{
-											id: 1,
+											id: 13,
 											name: 'testicule'
 										},
 										{
-											id: 2,
+											id: 14,
 											name: 'salamandra'
 										},{
-											id: 3,
+											id: 15,
 											name: 'cacat'
 										}
 
@@ -68,9 +108,64 @@
 					],
 				},
 				{
-					title: 'aperitiv2',
+					title: 'Pranz',
 					upvotes: 15,
-					subcateg: [],
+					subcateg: [
+							{
+								name: 'Pranz1',
+								id: 4,
+								ingredients: [
+										{
+											id: 16,
+											name: 'patrunjel'
+										},
+										{
+											id: 17,
+											name: 'marar'
+										},{
+											id: 17,
+											name: 'muschi'
+										}
+
+								]
+							},
+							{
+								name: 'Pranz2',
+								id: 5,
+								ingredients: [
+										{
+											id: 19,
+											name: 'ridiche'
+										},
+										{
+											id: 20,
+											name: 'rosie'
+										},{
+											id: 21,
+											name: 'salam'
+										}
+
+								]
+							},
+							{
+								name: 'Pranz3',
+								id: 6,
+								ingredients: [
+										{
+											id: 22,
+											name: 'testicule'
+										},
+										{
+											id: 23,
+											name: 'salamandra'
+										},{
+											id: 24,
+											name: 'cacat'
+										}
+
+								]
+							}
+					],
 				},
 				{
 					title: 'aperitiv3',
