@@ -9,10 +9,55 @@
 		<script type="text/javascript" src="libraries/angular-route.min.js"></script>
 
 	</head>
-	<body ng-app="myApp" ng-controller="mainCtrl">
+	<body ng-app="myApp">
 
 
+		<!--  <div class="row container">
+	<div class="col-md-4"><a href="#/">Home page</a></div>
+	<div class="col-md-4"><a href="#/news">News</a></div>
+	<div class="col-md-4"><a href="#/aperitivi">Aperitivi</a></div>
+</div>
+ -->
+<div class="content" ng-controller="mainCtrl">
+	<div class="left_menu">
+		<div class="logo">
+			<div class="menu_top"><img src="assets/images/button_menu.png"></div>
+			<span class="text_center"><a href="#/" ><img src="assets/images/logo_4FE.png"></a></span>
+		</div>
+		<div class="header-search">
+			<input type="text" id="search_input" class="form-control" ng-model="search_products" placeholder="Search">
+		</div>
+		<div class="top_left_container">
+			<div class="option_select">
+				<a href="#/" class="each_select third_select"><img src="assets/images/button_lefttab_01.png"></a>
+				<a href="#/" class="each_select third_select"><img src="assets/images/button_lefttab_02.png"></a>
+				<a href="#/" class="each_select third_select"><img src="assets/images/button_lefttab_03.png"></a>
+			</div>
+			<div class="add_products">
+			</div>
+		</div>
+		<ul class="menu_list">
+			<li ng-repeat="aperitiv in aperitive" ng-init= "value = 'off'">
+				<img class="each_img_item" src="assets/images/icon_lefttab_01.png"/> 
+				<a ng-click="value = {'on' : 'off', 'off' : 'on'}[value]">{{aperitiv.title}}</a> <!--ng-click="aperitiv.subcateg = !aperitiv.subcateg"-->
+				<ul class="menu_list_subcategories" ng-show="value == 'on'"> <!--ng-show="!aperitiv.subcateg"-->
+					<li  ng-repeat = "aperitiveType in aperitiv.subcateg" ng-init= "value = '2'">	
+						<a ng-click="value = {'1' : '2', '2' : '1'}[value]">{{aperitiveType.name}}</a>
+						<ul class="menu_list_sub-subcategories"  ng-show="value == '1'">
+							<li ng-repeat = "ingredient in aperitiveType.ingredients">
+								<a href="#/menuDetails/{{$index}}">{{ingredient.name}}</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="item_details" ng-controller="aperitiviCtrl"> 
 		<div ng-view></div>
+	</div>
+</div>		
 		
 		<!-- Modules -->
 		<script type="text/javascript" src="app.js"></script>
