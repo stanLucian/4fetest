@@ -16,7 +16,7 @@
 								ingredients: [
 										{
 											id: 7,
-											name: 'patrunjel'
+											name: 'patrunjel',
 											details: [
 												{
 													id: 25,
@@ -32,7 +32,7 @@
 													id: 27,
 													name: 'ingredingredingredingred',
 													description: 'dssdaasddasaazzzzzsddasasddas'
-												},
+												}
 
 											]
 										},
@@ -41,13 +41,13 @@
 											name: 'marar',
 											details: [
 											]
-										},{
+										},
+										{
 											id: 9,
 											name: 'muschi',
 											details: [
 											]
 										}
-
 								]
 							},
 							{
@@ -72,7 +72,7 @@
 													id: 29,
 													name: '33333',
 													description: 'dssdaasddasaazzzzzsddasasddas'
-												},
+												}
 
 											]
 										},
