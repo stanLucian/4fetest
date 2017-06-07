@@ -70,7 +70,7 @@
 	letter-spacing: 0.1em;
 }
 .menu_list_subcategories > li {
-  height: 40px;
+ /* height: 40px;*/
   padding-left: 29px;
   text-align: left;
 }
@@ -107,9 +107,11 @@ i{
 .margin_left_10{
 	margin-left: 10px;
 }
-.item_details{
+.item_details {
 	background-color: #EEF2F8;
 	margin: 0;
+  height: 768px;
+  background-image: url("../images/labware_img.png");
 }
 .menu_top {
   align-items: center;
@@ -165,7 +167,7 @@ i{
 }
 .menu_list > li {
   background: #445481 none repeat scroll 0 0;
-  height: 58px;
+  /*height: 58px; */
 }
 .menu_list_subcategories li a {
   align-items: center;
@@ -211,14 +213,8 @@ i{
 .item_details {
   background-color: #eef2f8;
   float: left;
-  height: 100%;
   margin: 0;
   width: 699px;
-}
-.item_details > img {
-  float: left;
-  height: 100%;
-  width: 100%;
 }
 .item_details.product_part {
   background-color: #c3c8d1;
