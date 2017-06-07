@@ -3,7 +3,7 @@
 	<div class="col-md-4"><a href="#/news">News</a></div>
 	<div class="col-md-4"><a href="#/aperitivi">Aperitivi</a></div>
 </div>
- -->
+
 <div class="content">
 	<div class="left_menu">
 		<div class="logo">
@@ -23,15 +23,15 @@
 			</div>
 		</div>
 		<ul class="menu_list">
-			<li ng-repeat="aperitiv in aperitive" >
+			<li ng-repeat="aperitiv in aperitive" ng-init= "value = 'off'">
 				<img class="each_img_item" src="assets/images/icon_lefttab_01.png"/> 
-				<span ng-click="aperitiv.subcateg = !aperitiv.subcateg">{{aperitiv.title}}</span> <!--ng-click="aperitiv.subcateg = !aperitiv.subcateg"-->
-				<ul class="menu_list_subcategories" > <!--ng-show="!aperitiv.subcateg"-->
-					<li ng-show="!aperitiv.subcateg" ng-repeat = "aperitiveType in aperitiv.subcateg">
-						<span>{{aperitiveType.name}}</span>
-						<ul class="menu_list_sub-subcategories">
+				<a ng-click="value = {'on' : 'off', 'off' : 'on'}[value]">{{aperitiv.title}}</a> ng-click="aperitiv.subcateg = !aperitiv.subcateg"
+				<ul class="menu_list_subcategories" ng-show="value == 'on'"> ng-show="!aperitiv.subcateg"
+					<li  ng-repeat = "aperitiveType in aperitiv.subcateg" ng-init= "value = '2'">
+						<a ng-click="value = {'1' : '2', '2' : '1'}[value]">{{aperitiveType.name}}</a>
+						<ul class="menu_list_sub-subcategories"  ng-show="value == '1'">
 							<li ng-repeat = "ingredient in aperitiveType.ingredients">
-								<span>{{ingredient.name}}</span>
+								<a href="#/menuDetails/{{$index}}">{{ingredient.name}}</a>
 							</li>
 						</ul>
 					</li>
@@ -39,7 +39,8 @@
 			</li>
 		</ul>
 	</div>
+
 	<div class="item_details">
 		<img src="assets/images/labware_img.png">
 	</div>
-</div>	
+</div>	 -->
