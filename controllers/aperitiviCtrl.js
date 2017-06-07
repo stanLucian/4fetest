@@ -8,8 +8,8 @@
 
 		$scope.currentAperitive = productService.aperitive.filter(function(a){
 			return (a.id == $routeParams.id);
-		})[0];
-
+		});
+		$scope.aperitiv = productService.aperitive[$routeParams.id];
 
 		/*angular.forEach($scope.allAperitives, function(aperitive){
 			if($routeParams.id == aperitive.id){
