@@ -45,7 +45,7 @@
 						<a ng-click="value = {'1' : '2', '2' : '1'}[value]">{{aperitiveType.name}}</a>
 						<ul class="menu_list_sub-subcategories"  ng-show="value == '1'">
 							<li ng-repeat = "ingredient in aperitiveType.ingredients">
-								<a href="#/menuDetails/{{$index}}">{{ingredient.name}}</a>
+								<a href="#/menuDetails/{{ingredient.id}}">{{ingredient.name}}</a>
 							</li>
 						</ul>
 					</li>
