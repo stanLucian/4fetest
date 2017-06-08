@@ -1,42 +1,201 @@
 {
 	"menus": [{
-			"id": "978-0641723445",
-			"cat": ["book", "hardcover"],
-			"name": "Aperitivi",
-			"author": "Rick Riordan",
-			"series_t": "Percy Jackson and the Olympians",
-			"sequence_i": 1,
-			"genre_s": "fantasy",
-			"inStock": true,
-			"price": 12.50,
-			"pages_i": 384,
-			"subcategories": [{
-				"name" : "antreu cu ciuperci",
-				"products": [
-					{
-						"name": "salam"
-					},
-					{
-						"name": "maslina"
-					},
-					{
-						"name": "rosii"
-					}
-				]
-			}]
+			"id": "1",
+			"name": "Aperitiv 1",
+			"subcategories": [
+				{
+					"name" : "subAper 1_1",
+					"id": "5",
+					"products": [
+						{
+							"id": "10",
+							"name": "salam",
+							"informations": [
+								{
+									"freePrice": "1",
+									"explose": "1",
+									"active": "1",
+									"price": [
+										{
+											"id": "19",
+											"value": "999",
+											"tax": "20"
+										},
+										{
+											"id": "20",
+											"value": "888",
+											"tax": "30"
+										},
+										{
+											"id": "21",
+											"value": "777",
+											"tax": "40"
+										}
+									]
+								}
+							],
+							"type": [
+								{
+									"id": "22",
+									"name": "article"
+								},
+								{
+									"id": "23",
+									"name": "article 2"
+								}
+							],
+							"priority": [
+								{
+									"id": "24",
+									"type": "low"
+								},
+								{
+									"id": "25",
+									"type": "medium"
+								},
+								{
+									"id": "26",
+									"type": "high"
+								}
+							],
+							"location": [
+								{
+									"id": "27",
+									"type" : "bar"
+								},
+								{
+									"id": "28",
+									"type" : "bar 2"
+								},
+								{
+									"id": "29",
+									"type" : "restaurant"
+								},
+								{
+									"id": "30",
+									"type" : "spaggia"
+								}
+							]
+						},
+						{
+							"id": "11",
+							"name": "maslina",
+							"informations": [
+								{
+									"freePrice": "0",
+									"explose": "0",
+									"active": "0",
+									"price": [
+										{
+											"id": "31",
+											"value": "999",
+											"tax": "20"
+										},
+										{
+											"id": "32",
+											"value": "888",
+											"tax": "30"
+										},
+										{
+											"id": "33",
+											"value": "777",
+											"tax": "40"
+										}
+									]
+								}
+							],
+							"type": [
+								{
+									"id": "34",
+									"name": "article"
+								},
+								{
+									"id": "35",
+									"name": "article 2"
+								}
+							],
+							"priority": [
+								{
+									"id": "36",
+									"type": "low"
+								},
+								{
+									"id": "37",
+									"type": "medium"
+								},
+								{
+									"id": "38",
+									"type": "high"
+								}
+							],
+							"location": [
+								{
+									"id": "39",
+									"type" : "bar"
+								},
+								{
+									"id": "40",
+									"type" : "bar 2"
+								},
+								{
+									"id": "41",
+									"type" : "restaurant"
+								},
+								{
+									"id": "42",
+									"type" : "spaggia"
+								}
+							]
+						},
+						{
+							"id": "12",
+							"name": "rosii"
+						}
+					]	
+				},
+				{
+					"name" : "subAper 1_2",
+					"id": "6",
+					"products": [
+						{
+							"id": "13",
+							"name": "mita1"
+						},
+						{
+							"id": "14",
+							"name": "mita12"
+						},
+						{
+							"id": "15",
+							"name": "mita13"
+						}
+					]	
+				},
+				{
+					"name" : "subAper 1_3",
+					"id": "7",
+					"products": [
+						{
+							"id": "16",
+							"name": "tanti1"
+						},
+						{
+							"id": "17",
+							"name": "tanti1"
+						},
+						{
+							"id": "18",
+							"name": "tanti1"
+						}
+					]	
+				}
+			]
 		},
 		{
-			"id": "978-1423103349",
-			"cat": ["book", "paperback"],
-			"name": "Pizza",
-			"author": "Rick Riordan",
-			"series_t": "Percy Jackson and the Olympians",
-			"sequence_i": 2,
-			"genre_s": "fantasy",
-			"inStock": true,
-			"price": 6.49,
-			"pages_i": 304,
+			"id": "2",
+			"name": "Aperitiv 2",
 			"subcategories": [{
+				"id": "8",
 				"name" : "antreu cu ciuperci",
 				"products": [
 					{
@@ -52,16 +211,10 @@
 			}]
 		},
 		{
-			"id": "978-1857995879",
-			"cat": ["book", "paperback"],
-			"name": "desert",
-			"author": "Jostein Gaarder",
-			"sequence_i": 1,
-			"genre_s": "fantasy",
-			"inStock": true,
-			"price": 3.07,
-			"pages_i": 64,
+			"id": "3",
+			"name": "Aperitiv 3",
 			"subcategories": [{
+				"id": "8",
 				"name" : "antreu cu ciuperci",
 				"products": [
 					{
@@ -77,16 +230,10 @@
 			}]
 		},
 		{
-			"id": "978-1933988177",
-			"cat": ["book", "paperback"],
-			"name": "Mandria dopmnului",
-			"author": "Michael McCandless",
-			"sequence_i": 1,
-			"genre_s": "IT",
-			"inStock": true,
-			"price": 30.50,
-			"pages_i": 475,
+			"id": "4",
+			"name": "Aperitiv 4",
 			"subcategories": [{
+				"id": "9",
 				"name" : "antreu cu ciuperci",
 				"products": [
 					{
