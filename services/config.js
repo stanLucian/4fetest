@@ -7,7 +7,7 @@
 
 		this.urls = {
 			Menus: baseUrl + 'database/menu-list.json',
-			Aperitive: baseUrl + 'database/aperitives.json',
+			Aperitive: baseUrl + 'database/menu-list.json',
 
 			//Menus
 			getMenuListUrl: function(){
