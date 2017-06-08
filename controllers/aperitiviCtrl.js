@@ -4,7 +4,6 @@
 	
 		aperitivesServices.getAperitives(function(data){
 			$scope.allAperitives = data.menus;
-			forEach
 		});
 		$scope.getAperitives = function(){
 			aperitivesServices.getAperitives(function(data){
