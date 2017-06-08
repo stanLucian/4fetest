@@ -22,7 +22,7 @@
 	<div class="left_menu">
 		<div class="logo">
 			<div class="menu_top"><img src="assets/images/button_menu.png"></div>
-			<span class="text_center"><a href="#/" ><img src="assets/images/logo_4FE.png"></a></span>
+			
 		</div>
 		<div class="header-search">
 			<input type="text" id="search_input" class="form-control" ng-model="search_products" placeholder="Search">
@@ -37,15 +37,23 @@
 			</div>
 		</div>
 		<ul class="menu_list">
-			<li ng-repeat="aperitiv in aperitive" ng-init= "value = 'off'">
+			<li ng-repeat="menu in menus.menus" ng-init= "value = 'off'">
 				<img class="each_img_item" src="assets/images/icon_lefttab_01.png"/> 
-				<a ng-click="value = {'on' : 'off', 'off' : 'on'}[value]">{{aperitiv.title}}</a> <!--ng-click="aperitiv.subcateg = !aperitiv.subcateg"-->
+				<a ng-click="value = {'on' : 'off', 'off' : 'on'}[value]">{{menu.name}}</a> <!--ng-click="aperitiv.subcateg = !aperitiv.subcateg"-->
 				<ul class="menu_list_subcategories" ng-show="value == 'on'"> <!--ng-show="!aperitiv.subcateg"-->
-					<li  ng-repeat = "aperitiveType in aperitiv.subcateg" ng-init= "value = '2'">	
+					<li  ng-repeat = "aperitiveType in menu.subcategories" ng-init= "value = '2'">	
 						<a ng-click="value = {'1' : '2', '2' : '1'}[value]">{{aperitiveType.name}}</a>
 						<ul class="menu_list_sub-subcategories"  ng-show="value == '1'">
-							<li ng-repeat = "ingredient in aperitiveType.ingredients">
+							<li ng-repeat = "ingredient in aperitiveType.products">
 								<a href="#/menuDetails/{{ingredient.id}}">{{ingredient.name}}</a>
+								<ul>
+									<li ng-repeat="detail in ingredient.informations">
+										{{detail.freePrice}}
+									</li>
+									<li ng-repeat="price in ingredient.informations">
+										<a ng-repeat="p in price.price">{{p.value}}</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -54,7 +62,7 @@
 		</ul>
 	</div>
 
-	<div class="item_details" ng-controller="aperitiviCtrl"> 
+	<div class="item_details"> 
 		<div ng-view></div>
 	</div>
 </div>		
