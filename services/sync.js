@@ -24,7 +24,7 @@
 		};
 		this.getAperitiveDetails = function(id,cb){
 			var url = config.urls.getAperitiveDetailsUrl(id);
-			registerGetRequestWithData(url, id, cb);
+			registerGetRequest(url, cb);
 		};
 	}]);
 
